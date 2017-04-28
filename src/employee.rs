@@ -13,6 +13,10 @@ impl<'a> Employee<'a> {
     pub fn add_tool(&mut self, tool: &'a Item) {
         self.belt.tools.push(tool);
     }
+
+    pub fn empty_toolbelt(&mut self) {
+        self.belt.empty();
+    }
 }
 
 impl<'a> fmt::Display for Employee<'a> {

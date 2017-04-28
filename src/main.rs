@@ -23,6 +23,6 @@ fn main() {
     println!("{}", e);
     e.add_tool(&screwdriver);
     println!("{}", e);
-    e.belt.empty();
+    e.empty_toolbelt();
     println!("{}", e);
 }
